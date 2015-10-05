@@ -57,7 +57,8 @@ static NSParagraphStyle *paragraphStyle;
     mutableParagraphStyle.headIndent = 20.0;
     mutableParagraphStyle.firstLineHeadIndent = 20.0;
     mutableParagraphStyle.tailIndent = -20.0;
-    mutableParagraphStyle.paragraphSpacingBefore = 5;
+    mutableParagraphStyle.paragraphSpacingBefore = 10;
+    
     
     paragraphStyle = mutableParagraphStyle;
 }
@@ -96,6 +97,9 @@ static NSParagraphStyle *paragraphStyle;
         [oneCommentString addAttribute:NSForegroundColorAttributeName value:linkColor range:usernameRange];
         
         [commentString appendAttributedString:oneCommentString];
+        
+        //Added this line to change color
+        [commentString addAttribute:NSFontAttributeName value:[UIColor orangeColor] range:NSMakeRange(0, commentString.length)];
     }
     
     return commentString;
