@@ -171,6 +171,8 @@ static NSParagraphStyle *paragraphStyle;
                                                                    constant:100];
         self.imageHeightConstraint.identifier = @"Image height constraint";
         
+        
+        //added this line to add width constraints
         self.imageWidthConstraint = [NSLayoutConstraint constraintWithItem:_mediaImageView
                                                                  attribute:NSLayoutAttributeWidth
                                                                  relatedBy:NSLayoutRelationEqual
