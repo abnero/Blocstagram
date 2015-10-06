@@ -22,8 +22,6 @@
         UIImage *image = [UIImage imageNamed:imageName];
         if (image) {
             [self.images addObject:image];
-//        } else if (!image){
-//            [self.images delete:image];
         }
     }
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"imageCell"];
@@ -108,6 +106,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [self.images removeObjectAtIndex:indexPath.row];
+
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         [tableView reloadData]; // tell table to refresh now
