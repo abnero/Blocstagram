@@ -83,7 +83,7 @@ static NSParagraphStyle *paragraphStyle;
 
 - (NSAttributedString *) commentString {
     NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] init];
-    
+    NSInteger firstInt = 0;
     for (Comment *comment in self.mediaItem.comments) {
         // Make a string that says "username comment" followed by a line break
         NSString *baseString = [NSString stringWithFormat:@"%@ %@\n", comment.from.userName, comment.text];
@@ -98,8 +98,11 @@ static NSParagraphStyle *paragraphStyle;
         
         [commentString appendAttributedString:oneCommentString];
         
+        if (firstInt == 0) {
         //Added this line to change color
-        [commentString addAttribute:NSFontAttributeName value:[UIColor orangeColor] range:NSMakeRange(0, commentString.length)];
+        [commentString addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(0, commentString.length)];
+            firstInt = 1;
+        }
     }
     
     return commentString;
