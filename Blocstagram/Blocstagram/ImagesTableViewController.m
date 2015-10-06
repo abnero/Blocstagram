@@ -12,12 +12,17 @@
 #import "Media.h"
 #import "User.h"
 #import "Comment.h"
+#import "DataSource.h"
 
 @interface ImagesTableViewController ()
 
 @end
 
 @implementation ImagesTableViewController
+
+- (NSArray*) items{
+    return [DataSource sharedInstance].mediaItems;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
