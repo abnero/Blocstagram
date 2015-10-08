@@ -41,12 +41,15 @@
 
 - (void) removeObjectFromMediaItemsAtIndex:(NSUInteger)index {
     [_mediaItems removeObjectAtIndex:index];
+
 }
 
 - (void) replaceObjectInMediaItemsAtIndex:(NSUInteger)index withObject:(id)object {
     [_mediaItems replaceObjectAtIndex:index withObject:object];
     
 }
+
+
 
 
 + (instancetype) sharedInstance {
@@ -148,8 +151,10 @@
 - (void) deleteMediaItem:(Media *)item {
     NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
     [mutableArrayWithKVO removeObject:item];
+    //[_mediaItems removeObject:item];
+    [mutableArrayWithKVO addObject:item];
 }
 
-- (void) 
+
 
 @end
