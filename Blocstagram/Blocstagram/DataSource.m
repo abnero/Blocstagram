@@ -45,7 +45,9 @@
 
 - (void) replaceObjectInMediaItemsAtIndex:(NSUInteger)index withObject:(id)object {
     [_mediaItems replaceObjectAtIndex:index withObject:object];
+    
 }
+
 
 + (instancetype) sharedInstance {
     static dispatch_once_t once;
@@ -147,5 +149,7 @@
     NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
     [mutableArrayWithKVO removeObject:item];
 }
+
+- (void) 
 
 @end
