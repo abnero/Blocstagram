@@ -21,6 +21,7 @@
 
 NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewControllerDidGetAccessTokenNotification";
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -45,7 +46,7 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
 
 
 - (NSString *)redirectURI {
-    return @"<#the redirect URI you specified when signing up with instagram#>";
+    return @"http://bloc.io";
 }
 
 - (void) viewWillLayoutSubviews {
