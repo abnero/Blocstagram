@@ -124,7 +124,6 @@
 
 - (NSString *) randomSentence {
     NSUInteger wordCount = arc4random_uniform(20) + 2;
-    
     NSMutableString *randomSentence = [[NSMutableString alloc] init];
     
     for (int i  = 0; i <= wordCount; i++) {
@@ -148,6 +147,9 @@
     return [NSString stringWithString:s];
 }
 
+#pragma mark -
+#pragma mark Hello
+
 - (void) deleteMediaItem:(Media *)item {
     NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
     [mutableArrayWithKVO removeObject:item];
@@ -155,6 +157,13 @@
     [mutableArrayWithKVO addObject:item];
 }
 
+-(void) moveMediaItemToTop:(Media *)item {
+    NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
+    [mutableArrayWithKVO removeObject:item];
+    //[_mediaItems removeObject:item];
+    //[_mediaItems insertObject:item atIndex:0];
+    [mutableArrayWithKVO insertObject:item atIndex:0]; //addObject:item];
+}
 
 
 @end
