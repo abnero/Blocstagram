@@ -17,9 +17,15 @@
 
 @interface ImagesTableViewController ()
 
+
+//back button
+@property (nonatomic, strong) UIButton *backButton;
+
 @end
 
 @implementation ImagesTableViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,9 +37,23 @@
 
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
-
+    
+    
+    self.navigationItem.leftBarButtonItem =
+    [[UIBarButtonItem alloc] initWithTitle:mainLib.navCountryTitle
+                                     style:UIBarButtonItemStyleBordered
+                                    target:self
+                                    action:@selector(handleBack:)];
 
 }
+
+//back button
+
+
+
+
+
+
 
 - (void) dealloc
 {
