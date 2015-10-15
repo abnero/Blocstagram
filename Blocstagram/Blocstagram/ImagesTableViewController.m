@@ -22,10 +22,6 @@
 //back button
 @property (nonatomic, strong) UIButton *backButton;
 
-
-//back button
-@property (nonatomic, strong) UIButton *backButton;
-
 @end
 
 @implementation ImagesTableViewController
@@ -46,15 +42,8 @@
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
     
-//    self.navigationItem.leftBarButtonItem =
-//    [[UIBarButtonItem alloc] initWithTitle:@"Back"
-//                                     style:UIBarButtonItemStylePlain
-//                                    target:self
-//                                    action:@selector(handleBack)];
-
 }
 
-//back button
 
 
 - (void) dealloc

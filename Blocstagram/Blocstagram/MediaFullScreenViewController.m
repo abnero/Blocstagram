@@ -15,6 +15,7 @@
 @property (nonatomic, strong) Media *media;
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
+@property (nonatomic, strong) UIWebView *webview;
 
 @end
 
@@ -58,7 +59,26 @@
     
     [self.scrollView addGestureRecognizer:self.tap];
     [self.scrollView addGestureRecognizer:self.doubleTap];
+    
+    //Share button
+    
+//    self.navigationItem.rightBarButtonItem =
+//    [[UIBarButtonItem alloc] initWithTitle:@"Share"
+//                                     style:UIBarButtonItemStylePlain
+//                                    target:self
+//                                    action:@selector(handleShare)];
+//    [self.navigationItem.rightBarButtonItem setEnabled:FALSE];
+//    
+//}
+//
+//- (void) handleShare {
+    //if ([self.webview ]) {
+    //        [self.webview goBack];
+    //    }
+
+
 }
+
 
 - (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
