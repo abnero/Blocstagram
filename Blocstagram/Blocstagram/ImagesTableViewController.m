@@ -25,10 +25,13 @@
     [super viewDidLoad];
     
     [[DataSource sharedInstance] addObserver:self forKeyPath:@"mediaItems" options:0 context:nil];
-    
+    //[[DataSource sharedInstance] requestNewItemsWithCompletionHandler:nil];
     self.refreshControl = [[UIRefreshControl alloc] init];
-    [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
-
+    [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged]; //refresh by pulling down
+    [self.refreshControl beginRefreshing];
+    [[DataSource sharedInstance] requestNewItemsWithCompletionHandler:^(NSError *error) { //refresh automatically
+        [self.refreshControl endRefreshing];
+    }];
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
 
