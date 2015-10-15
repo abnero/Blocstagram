@@ -41,8 +41,25 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [self.webView loadRequest:request];
     }
+    
+    
+    //create back button
+    self.navigationItem.leftBarButtonItem =
+    [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                     style:UIBarButtonItemStylePlain
+                                    target:self
+                                    action:@selector(handleBack)];
+    [self.navigationItem.leftBarButtonItem setEnabled:FALSE];
 }
 
+
+
+
+- (void)handleBack {
+    if ([self.webView canGoBack]) {
+        [self.webView goBack];
+    }
+}
 
 
 - (NSString *)redirectURI {
@@ -88,6 +105,16 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
 }
 */
 
+
+//enable back button
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    if ([self.webView canGoBack]) {
+        [self.navigationItem.leftBarButtonItem setEnabled:TRUE];
+    } else {
+        [self.navigationItem.leftBarButtonItem setEnabled:FALSE];
+    }
+}
+
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSString *urlString = request.URL.absoluteString;
     if ([urlString hasPrefix:[self redirectURI]]) {
@@ -99,6 +126,7 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
         
         return NO;
     }
+
     
     return YES;
 }

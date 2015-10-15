@@ -38,21 +38,15 @@
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
     
-    
-    self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithTitle:mainLib.navCountryTitle
-                                     style:UIBarButtonItemStyleBordered
-                                    target:self
-                                    action:@selector(handleBack:)];
+//    self.navigationItem.leftBarButtonItem =
+//    [[UIBarButtonItem alloc] initWithTitle:@"Back"
+//                                     style:UIBarButtonItemStylePlain
+//                                    target:self
+//                                    action:@selector(handleBack)];
 
 }
 
 //back button
-
-
-
-
-
 
 
 - (void) dealloc
