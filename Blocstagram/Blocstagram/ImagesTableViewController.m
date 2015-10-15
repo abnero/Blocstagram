@@ -22,6 +22,10 @@
 //back button
 @property (nonatomic, strong) UIButton *backButton;
 
+
+//back button
+@property (nonatomic, strong) UIButton *backButton;
+
 @end
 
 @implementation ImagesTableViewController
