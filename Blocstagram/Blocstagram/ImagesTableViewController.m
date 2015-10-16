@@ -42,7 +42,11 @@
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
     
+    
 }
+
+    
+
 
 
 

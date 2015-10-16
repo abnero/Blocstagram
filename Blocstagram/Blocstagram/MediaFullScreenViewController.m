@@ -76,7 +76,7 @@
     
     NSLog(@"shareButton pressed");
     NSString *texttoshare = @"text to share";
-    UIImage *imagetoshare = [UIImage imageNamed:@"beck.png"];
+    UIImage *imagetoshare = [UIImage imageNamed:@"mediaItem"];
     NSArray *activityItems = @[texttoshare, imagetoshare];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     activityVC.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint, UIActivityTypePostToTwitter, UIActivityTypePostToWeibo];
