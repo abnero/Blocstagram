@@ -50,8 +50,8 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
                                     target:self
                                     action:@selector(handleBack)];
     [self.navigationItem.leftBarButtonItem setEnabled:FALSE];
+    
 }
-
 
 
 

@@ -59,25 +59,32 @@
     
     [self.scrollView addGestureRecognizer:self.tap];
     [self.scrollView addGestureRecognizer:self.doubleTap];
+   
     
     //Share button
     
-//    self.navigationItem.rightBarButtonItem =
-//    [[UIBarButtonItem alloc] initWithTitle:@"Share"
-//                                     style:UIBarButtonItemStylePlain
-//                                    target:self
-//                                    action:@selector(handleShare)];
-//    [self.navigationItem.rightBarButtonItem setEnabled:FALSE];
-//    
-//}
-//
-//- (void) handleShare {
-    //if ([self.webview ]) {
-    //        [self.webview goBack];
-    //    }
-
-
+    self.navigationItem.rightBarButtonItem =
+    [[UIBarButtonItem alloc] initWithTitle:@"Share"
+                                     style:UIBarButtonItemStylePlain
+                                    target:self
+                                    action:@selector(shareButtonPressed:)];
+    [self.navigationItem.rightBarButtonItem setEnabled:FALSE];
+    
 }
+
+- (IBAction)shareButtonPressed:(id)sender {
+    
+    NSLog(@"shareButton pressed");
+    NSString *texttoshare = @"text to share";
+    UIImage *imagetoshare = [UIImage imageNamed:@"beck.png"];
+    NSArray *activityItems = @[texttoshare, imagetoshare];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    activityVC.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint, UIActivityTypePostToTwitter, UIActivityTypePostToWeibo];
+    [self presentViewController:activityVC animated:TRUE completion:nil];
+}
+
+
+
 
 
 - (void) viewWillLayoutSubviews {
