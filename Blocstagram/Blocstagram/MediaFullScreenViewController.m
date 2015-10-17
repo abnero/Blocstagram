@@ -63,27 +63,27 @@
     
     //Share button
     
-    self.navigationItem.rightBarButtonItem =
-    [[UIBarButtonItem alloc] initWithTitle:@"Share"
-                                     style:UIBarButtonItemStylePlain
-                                    target:self
-                                    action:@selector(shareButtonPressed:)];
-    [self.navigationItem.rightBarButtonItem setEnabled:FALSE];
-    
+//    self.navigationItem.rightBarButtonItem =
+//    [[UIBarButtonItem alloc] initWithTitle:@"Share"
+//                                     style:UIBarButtonItemStylePlain
+//                                    target:self
+//                                    action:@selector(shareButtonPressed:)];
+//    [self.navigationItem.rightBarButtonItem setEnabled:FALSE];
+//    
+//}
+//
+//- (IBAction)shareButtonPressed:(id)sender {
+//    
+//    NSLog(@"shareButton pressed");
+//    NSString *texttoshare = @"text to share";
+//    UIImage *imagetoshare = [UIImage imageNamed:@"mediaItem"];
+//    NSArray *activityItems = @[texttoshare, imagetoshare];
+//    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+//    activityVC.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint, UIActivityTypePostToTwitter, UIActivityTypePostToWeibo];
+//    [self presentViewController:activityVC animated:TRUE completion:nil];
+//}
+
 }
-
-- (IBAction)shareButtonPressed:(id)sender {
-    
-    NSLog(@"shareButton pressed");
-    NSString *texttoshare = @"text to share";
-    UIImage *imagetoshare = [UIImage imageNamed:@"mediaItem"];
-    NSArray *activityItems = @[texttoshare, imagetoshare];
-    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-    activityVC.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint, UIActivityTypePostToTwitter, UIActivityTypePostToWeibo];
-    [self presentViewController:activityVC animated:TRUE completion:nil];
-}
-
-
 
 
 
