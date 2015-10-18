@@ -31,6 +31,8 @@
 		1B057BA71BC1E7F300BB0774 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057BA61BC1E7F300BB0774 /* MediaTableViewCell.m */; };
 		1B6ECF371BCE1B73003CFE67 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6ECF361BCE1B73003CFE67 /* MediaFullScreenViewController.m */; };
 		1BF3253F1BC8AA130005C421 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3253E1BC8AA130005C421 /* LoginViewController.m */; };
+		1BF7647E1BD3596E00157876 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7647D1BD3596E00157876 /* CircleSpinnerView.m */; };
+		1BF764811BD35E6600157876 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF764801BD35E6600157876 /* LikeButton.m */; };
 		710BA17F85C6CF6ACC3C8553 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E958B7ACE92AC59D84E9D5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,10 @@
 		1B6ECF361BCE1B73003CFE67 /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
 		1BF3253D1BC8AA130005C421 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		1BF3253E1BC8AA130005C421 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1BF7647C1BD3596E00157876 /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
+		1BF7647D1BD3596E00157876 /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
+		1BF7647F1BD35E6600157876 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		1BF764801BD35E6600157876 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 		24E958B7ACE92AC59D84E9D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		360072F83DB013B57E460556 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6612B88F859094D32E92BADB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +169,10 @@
 				1BF3253E1BC8AA130005C421 /* LoginViewController.m */,
 				1B6ECF351BCE1B73003CFE67 /* MediaFullScreenViewController.h */,
 				1B6ECF361BCE1B73003CFE67 /* MediaFullScreenViewController.m */,
+				1BF7647C1BD3596E00157876 /* CircleSpinnerView.h */,
+				1BF7647D1BD3596E00157876 /* CircleSpinnerView.m */,
+				1BF7647F1BD35E6600157876 /* LikeButton.h */,
+				1BF764801BD35E6600157876 /* LikeButton.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -388,6 +398,8 @@
 				1B6ECF371BCE1B73003CFE67 /* MediaFullScreenViewController.m in Sources */,
 				1B057BA11BC0DF8100BB0774 /* DataSource.m in Sources */,
 				1B057B5B1BBE2A7100BB0774 /* main.m in Sources */,
+				1BF764811BD35E6600157876 /* LikeButton.m in Sources */,
+				1BF7647E1BD3596E00157876 /* CircleSpinnerView.m in Sources */,
 				1B057B951BBE3C7400BB0774 /* ImagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
