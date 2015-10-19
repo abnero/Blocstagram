@@ -35,6 +35,9 @@
 		1BF764841BD4624C00157876 /* CountingLikes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF764831BD4624C00157876 /* CountingLikes.m */; };
 		1BF780C01BD4716000B08D5E /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780BF1BD4716000B08D5E /* MediaTableViewCell.m */; };
 		1BF780C31BD4755B00B08D5E /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780C21BD4755B00B08D5E /* ComposeCommentView.m */; };
+		1BF780C61BD4C33E00B08D5E /* CameraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780C51BD4C33E00B08D5E /* CameraToolbar.m */; };
+		1BF780C91BD563CE00B08D5E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780C81BD563CE00B08D5E /* CameraViewController.m */; };
+		1BF780CC1BD56CF500B08D5E /* UIImage+ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */; };
 		710BA17F85C6CF6ACC3C8553 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E958B7ACE92AC59D84E9D5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +98,12 @@
 		1BF780BF1BD4716000B08D5E /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 		1BF780C11BD4755B00B08D5E /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
 		1BF780C21BD4755B00B08D5E /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
+		1BF780C41BD4C33E00B08D5E /* CameraToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToolbar.h; sourceTree = "<group>"; };
+		1BF780C51BD4C33E00B08D5E /* CameraToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToolbar.m; sourceTree = "<group>"; };
+		1BF780C71BD563CE00B08D5E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		1BF780C81BD563CE00B08D5E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		1BF780CA1BD56CF500B08D5E /* UIImage+ImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageUtilities.h"; sourceTree = "<group>"; };
+		1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageUtilities.m"; sourceTree = "<group>"; };
 		24E958B7ACE92AC59D84E9D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		360072F83DB013B57E460556 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6612B88F859094D32E92BADB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +192,12 @@
 				1BF764831BD4624C00157876 /* CountingLikes.m */,
 				1BF780C11BD4755B00B08D5E /* ComposeCommentView.h */,
 				1BF780C21BD4755B00B08D5E /* ComposeCommentView.m */,
+				1BF780C41BD4C33E00B08D5E /* CameraToolbar.h */,
+				1BF780C51BD4C33E00B08D5E /* CameraToolbar.m */,
+				1BF780C71BD563CE00B08D5E /* CameraViewController.h */,
+				1BF780C81BD563CE00B08D5E /* CameraViewController.m */,
+				1BF780CA1BD56CF500B08D5E /* UIImage+ImageUtilities.h */,
+				1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -404,10 +419,13 @@
 				1BF780C31BD4755B00B08D5E /* ComposeCommentView.m in Sources */,
 				1BF3253F1BC8AA130005C421 /* LoginViewController.m in Sources */,
 				1BF780C01BD4716000B08D5E /* MediaTableViewCell.m in Sources */,
+				1BF780C61BD4C33E00B08D5E /* CameraToolbar.m in Sources */,
 				1BF764841BD4624C00157876 /* CountingLikes.m in Sources */,
 				1B057B5E1BBE2A7100BB0774 /* AppDelegate.m in Sources */,
 				1B057BA41BC1086800BB0774 /* Items.m in Sources */,
+				1BF780C91BD563CE00B08D5E /* CameraViewController.m in Sources */,
 				1B6ECF371BCE1B73003CFE67 /* MediaFullScreenViewController.m in Sources */,
+				1BF780CC1BD56CF500B08D5E /* UIImage+ImageUtilities.m in Sources */,
 				1B057BA11BC0DF8100BB0774 /* DataSource.m in Sources */,
 				1B057B5B1BBE2A7100BB0774 /* main.m in Sources */,
 				1BF764811BD35E6600157876 /* LikeButton.m in Sources */,
