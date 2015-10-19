@@ -31,9 +31,17 @@
         
         [self addSubview:self.textView];
         [self.textView addSubview:self.button];
+        
+        
+        //Assignment 40
+        {[UIView animateWithDuration:1 delay:0.1 usingSpringWithDamping:.01 initialSpringVelocity:1 options:ceil(1000) animations:nil completion:nil
+          ];
+        };
+        
     }
     return self;
 }
+
 
 - (NSAttributedString *) commentAttributedString {
     NSString *baseString = NSLocalizedString(@"COMMENT", @"comment button text");
