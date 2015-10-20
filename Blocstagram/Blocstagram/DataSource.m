@@ -211,7 +211,7 @@
         
         if (mediaItem) {
             [tmpMediaItems addObject:mediaItem];
-            
+            NSLog(@"%@",mediaDictionary);
         }
     }
     

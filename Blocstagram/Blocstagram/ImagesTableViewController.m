@@ -186,7 +186,7 @@
     if (item.image) {
         return 350;
     } else {
-        return 150;
+        return 350;
     }
 }
 
