@@ -62,13 +62,16 @@
    
     
     //Share button
-    
-    self.navigationItem.rightBarButtonItem =
-    [[UIBarButtonItem alloc] initWithTitle:@"Share"
-                                     style:UIBarButtonItemStylePlain
-                                    target:self
-                                    action:@selector(shareButtonPressed:)];
-    [self.navigationItem.rightBarButtonItem setEnabled:FALSE];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:self
+               action:@selector(shareButtonPressed:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundColor:[UIColor whiteColor]];
+    [button setTitle:@"Share" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.frame = CGRectMake(20.0, 20.0, 160.0, 40.0);
+
+    [self.scrollView insertSubview:button aboveSubview:self.imageView];
     
 }
 
@@ -76,8 +79,8 @@
     
     NSLog(@"shareButton pressed");
     NSString *texttoshare = @"text to share";
-    UIImage *imagetoshare = [UIImage imageNamed:@"mediaItem"];
-    NSArray *activityItems = @[texttoshare, imagetoshare];
+    UIImage *imagetoshare = self.imageView.image;
+    NSArray *activityItems = @[imagetoshare];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     activityVC.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint, UIActivityTypePostToTwitter, UIActivityTypePostToWeibo];
     [self presentViewController:activityVC animated:TRUE completion:nil];
