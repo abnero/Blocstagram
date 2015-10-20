@@ -11,6 +11,7 @@
 #import "Media.h"
 #import "Comment.h"
 #import "User.h"
+#import "DataSource.h"
 
 @interface MediaTableViewCell () <UIGestureRecognizerDelegate>
 
@@ -157,6 +158,11 @@ static NSParagraphStyle *paragraphStyle;
         self.longPressGestureRecognizer.delegate = self;
         [self.mediaImageView addGestureRecognizer:self.longPressGestureRecognizer];
         
+        UITapGestureRecognizer *twoFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleFingerTap:)];
+        twoFingerTap.delegate = self;
+        twoFingerTap.numberOfTouchesRequired = 2;
+        [self.mediaImageView addGestureRecognizer:twoFingerTap];
+        
         self.usernameAndCaptionLabel = [[UILabel alloc] init];
         self.usernameAndCaptionLabel.numberOfLines = 0;
         self.usernameAndCaptionLabel.backgroundColor = usernameLabelGray;
@@ -247,6 +253,19 @@ static NSParagraphStyle *paragraphStyle;
     if (sender.state == UIGestureRecognizerStateBegan) {
         [self.delegate cell:self didLongPressImageView:self.mediaImageView];
     }
+}
+
+- (void) doubleFingerTap:(UITapGestureRecognizer *)sender {
+    NSLog(@"two finget tap gestuer event fired");
+    if (self.mediaImageView.image) {
+        //delete image	
+        self.mediaImageView.image = nil;
+        self.mediaItem.image = nil;
+    } else {
+        //redownload image
+        [[DataSource sharedInstance] downloadImageForMediaItem:self.mediaItem];
+    }
+    
 }
 
 #pragma mark - UIGestureRecognizerDelegate

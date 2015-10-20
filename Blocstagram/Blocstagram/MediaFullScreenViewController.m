@@ -68,6 +68,7 @@
     
     UITapGestureRecognizer *twoFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleFingerTap:)];
     twoFingerTap.numberOfTouchesRequired = 2;
+    
     //[super addGestureRecognizer: twoFingerTap];
    
     
