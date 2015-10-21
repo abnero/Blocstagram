@@ -10,7 +10,7 @@
 
 @implementation UIImage (ImageUtilities)
 
-- (UIImage *) imageWithFixedOrientation {
+- (UIImage *) imageByScalingToSize:(CGSize)size andCroppingWithRect:(CGRect)rect {
     // Do nothing if the orientation is already correct
     if (self.imageOrientation == UIImageOrientationUp) return [self copy];
     
@@ -95,9 +95,11 @@
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
     return img;
-}
 
-- (UIImage *) imageResizedToMatchAspectRatioOfSize:(CGSize)size {
+
+
+//resize
+
     CGFloat horizontalRatio = size.width / self.size.width;
     CGFloat verticalRatio = size.height / self.size.height;
     CGFloat ratio = MAX(horizontalRatio, verticalRatio);
@@ -126,15 +128,15 @@
     CGImageRelease(newImageRef);
     
     return newImage;
-}
 
-- (UIImage *) imageCroppedToRect:(CGRect)cropRect {
-    cropRect.size.width *= self.scale;
-    cropRect.size.height *= self.scale;
-    cropRect.origin.x *= self.scale;
-    cropRect.origin.y *= self.scale;
+
+//crop
+    rect.size.width *= self.scale;
+    rect.size.height *= self.scale;
+    rect.origin.x *= self.scale;
+    rect.origin.y *= self.scale;
     
-    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, cropRect);
+    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
     UIImage *image = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
     CGImageRelease(imageRef);
     return image;
