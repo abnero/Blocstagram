@@ -98,9 +98,21 @@
     _isWritingComment = isWritingComment;
     
     if (animated) {
-        [UIView animateWithDuration:0.2 animations:^{
-            [self layoutSubviews];
-        }];
+        [UIView animateWithDuration:0.2
+                              delay:0
+                            options: UIViewAnimationOptionCurveEaseIn
+                         animations:^{
+
+                             [self layoutSubviews];
+//                             self.basketTop.frame = basketTopFrame;
+//                             self.basketBottom.frame = basketBottomFrame;
+                         }
+                         completion:^(BOOL finished){
+                             NSLog(@"Done!");
+                         }];
+//        [UIView animateWithDuration:0.2 animations:^{
+//            [self layoutSubviews];
+//        }];
     } else {
         [self layoutSubviews];
     }
