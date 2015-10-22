@@ -9,7 +9,7 @@
 #import "ImagesTableViewController.h"
 
 #import "DataSource.h"
-#import "Items.h"
+
 #import "Media.h"
 #import "User.h"
 #import "Comment.h"
