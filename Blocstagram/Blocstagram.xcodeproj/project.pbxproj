@@ -39,6 +39,7 @@
 		1BF780CC1BD56CF500B08D5E /* UIImage+ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */; };
 		1BFC3C931BD7555300771476 /* CropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC3C921BD7555300771476 /* CropBox.m */; };
 		1BFC3C961BD7597200771476 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC3C951BD7597200771476 /* CropImageViewController.m */; };
+		1BFC3C991BD9CED700771476 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */; };
 		710BA17F85C6CF6ACC3C8553 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E958B7ACE92AC59D84E9D5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,8 @@
 		1BFC3C921BD7555300771476 /* CropBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropBox.m; sourceTree = "<group>"; };
 		1BFC3C941BD7597200771476 /* CropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageViewController.h; sourceTree = "<group>"; };
 		1BFC3C951BD7597200771476 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
+		1BFC3C971BD9CED700771476 /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
+		1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
 		24E958B7ACE92AC59D84E9D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		360072F83DB013B57E460556 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6612B88F859094D32E92BADB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 				1BFC3C921BD7555300771476 /* CropBox.m */,
 				1BFC3C941BD7597200771476 /* CropImageViewController.h */,
 				1BFC3C951BD7597200771476 /* CropImageViewController.m */,
+				1BFC3C971BD9CED700771476 /* ImageLibraryViewController.h */,
+				1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				1BF3253F1BC8AA130005C421 /* LoginViewController.m in Sources */,
 				1BF780C01BD4716000B08D5E /* MediaTableViewCell.m in Sources */,
 				1BF780C61BD4C33E00B08D5E /* CameraToolbar.m in Sources */,
+				1BFC3C991BD9CED700771476 /* ImageLibraryViewController.m in Sources */,
 				1BFC3C931BD7555300771476 /* CropBox.m in Sources */,
 				1BF764841BD4624C00157876 /* CountingLikes.m in Sources */,
 				1B057B5E1BBE2A7100BB0774 /* AppDelegate.m in Sources */,

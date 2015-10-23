@@ -12,8 +12,9 @@
 #import "CameraToolbar.h"
 #import "UIImage+ImageUtilities.h"
 #import "CropBox.h"
+#import "ImageLibraryViewController.h"
 
-@interface CameraViewController () <CameraToolbarDelegate>
+@interface CameraViewController () <CameraToolbarDelegate, ImageLibraryViewControllerDelegate>
 
 
 @property (nonatomic, strong) UIView *imagePreview;
@@ -255,7 +256,15 @@
 }
 
 - (void) rightButtonPressedOnToolbar:(CameraToolbar *)toolbar {
-    NSLog(@"Photo library button pressed.");
+    ImageLibraryViewController *imageLibraryVC = [[ImageLibraryViewController alloc] init];
+    imageLibraryVC.delegate = self;
+    [self.navigationController pushViewController:imageLibraryVC animated:YES];
+}
+
+#pragma mark - ImageLibraryViewControllerDelegate
+
+- (void) imageLibraryViewController:(ImageLibraryViewController *)imageLibraryViewController didCompleteWithImage:(UIImage *)image {
+    [self.delegate cameraViewController:self didCompleteWithImage:image];
 }
 
 
