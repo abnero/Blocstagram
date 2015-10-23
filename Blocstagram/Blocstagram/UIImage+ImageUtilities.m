@@ -10,7 +10,8 @@
 
 @implementation UIImage (ImageUtilities)
 
-- (UIImage *) imageByScalingToSize:(CGSize)size andCroppingWithRect:(CGRect)rect {
+
+- (UIImage *) imageWithFixedOrientation {
     // Do nothing if the orientation is already correct
     if (self.imageOrientation == UIImageOrientationUp) return [self copy];
     
@@ -95,51 +96,6 @@
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
     return img;
-
-
-
-//resize
-
-    CGFloat horizontalRatio = size.width / self.size.width;
-    CGFloat verticalRatio = size.height / self.size.height;
-    CGFloat ratio = MAX(horizontalRatio, verticalRatio);
-    CGSize newSize = CGSizeMake(self.size.width * ratio * self.scale, self.size.height * ratio * self.scale);
-    
-    CGRect newRect = CGRectIntegral(CGRectMake(0, 0, newSize.width, newSize.height));
-    CGImageRef imageRef = self.CGImage;
-    
-    CGContextRef ctx = CGBitmapContextCreate(NULL,
-                                             newRect.size.width,
-                                             newRect.size.height,
-                                             CGImageGetBitsPerComponent(self.CGImage),
-                                             0,
-                                             CGImageGetColorSpace(self.CGImage),
-                                             CGImageGetBitmapInfo(self.CGImage));
-    
-    // Draw into the context; this scales the image
-    CGContextDrawImage(ctx, newRect, imageRef);
-    
-    // Get the resized image from the context and a UIImage
-    CGImageRef newImageRef = CGBitmapContextCreateImage(ctx);
-    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:self.scale orientation:UIImageOrientationUp];
-    
-    // Clean up
-    CGContextRelease(ctx);
-    CGImageRelease(newImageRef);
-    
-    return newImage;
-
-
-//crop
-    rect.size.width *= self.scale;
-    rect.size.height *= self.scale;
-    rect.origin.x *= self.scale;
-    rect.origin.y *= self.scale;
-    
-    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
-    UIImage *image = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
-    CGImageRelease(imageRef);
-    return image;
 }
 
 @end
