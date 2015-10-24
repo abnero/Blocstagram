@@ -15,7 +15,7 @@
 - (UIImage *) imageCroppedToRect:(CGRect)cropRect;
 
 //assignment 41
-- (UIImage *) imageByScalingToSize:(CGSize)size andCroppingWithRect:(CGRect)rect;
+//- (UIImage *) imageByScalingToSize:(CGSize)size andCroppingWithRect:(CGRect)rect;
 
 
 @end

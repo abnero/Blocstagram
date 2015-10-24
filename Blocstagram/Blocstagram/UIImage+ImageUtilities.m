@@ -98,4 +98,47 @@
     return img;
 }
 
+- (UIImage *) imageCroppedToRect:(CGRect)cropRect {
+    cropRect.size.width *= self.scale;
+    cropRect.size.height *= self.scale;
+    cropRect.origin.x *= self.scale;
+    cropRect.origin.y *= self.scale;
+    
+    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, cropRect);
+    UIImage *image = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
+    CGImageRelease(imageRef);
+    return image;
+}
+
+- (UIImage *) imageResizedToMatchAspectRatioOfSize:(CGSize)size {
+    CGFloat horizontalRatio = size.width / self.size.width;
+    CGFloat verticalRatio = size.height / self.size.height;
+    CGFloat ratio = MAX(horizontalRatio, verticalRatio);
+    CGSize newSize = CGSizeMake(self.size.width * ratio * self.scale, self.size.height * ratio * self.scale);
+    
+    CGRect newRect = CGRectIntegral(CGRectMake(0, 0, newSize.width, newSize.height));
+    CGImageRef imageRef = self.CGImage;
+    
+    CGContextRef ctx = CGBitmapContextCreate(NULL,
+                                             newRect.size.width,
+                                             newRect.size.height,
+                                             CGImageGetBitsPerComponent(self.CGImage),
+                                             0,
+                                             CGImageGetColorSpace(self.CGImage),
+                                             CGImageGetBitmapInfo(self.CGImage));
+    
+    // Draw into the context; this scales the image
+    CGContextDrawImage(ctx, newRect, imageRef);
+    
+    // Get the resized image from the context and a UIImage
+    CGImageRef newImageRef = CGBitmapContextCreateImage(ctx);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:self.scale orientation:UIImageOrientationUp];
+    
+    // Clean up
+    CGContextRelease(ctx);
+    CGImageRelease(newImageRef);
+    
+    return newImage;
+}
+
 @end
