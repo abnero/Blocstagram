@@ -16,6 +16,4 @@
 
 @end
 
-@interface UIImage (ImageUtilities)
 
-@end
