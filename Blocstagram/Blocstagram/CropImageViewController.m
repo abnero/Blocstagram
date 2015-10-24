@@ -11,11 +11,17 @@
 #import "CropBox.h"
 #import "Media.h"
 #import "UIImage+ImageUtilities.h"
+#import "CameraToolbar.h"
 
 @interface CropImageViewController ()
 
 @property (nonatomic, strong) CropBox *cropBox;
 @property (nonatomic, assign) BOOL hasLoadedOnce;
+
+@property (nonatomic, strong) UIToolbar *topView;
+@property (nonatomic, strong) UIToolbar *bottomView;
+@property (nonatomic, strong) CameraToolbar *cameraToolbar;
+@property (nonatomic, strong) UIView *imagePreview;
 
 @end
 
@@ -37,6 +43,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     
     self.view.clipsToBounds = YES;
@@ -88,6 +95,21 @@
     scrollViewCrop = [scrollViewCrop imageCroppedToRect:visibleRect];
     
     [self.delegate cropControllerFinishedWithImage:scrollViewCrop];
+}
+
+//translucent background
+- (void) createViews {
+    self.imagePreview = [UIView new];
+    self.topView = [UIToolbar new];
+    self.bottomView = [UIToolbar new];
+    self.cropBox = [CropBox new];
+    self.cameraToolbar = [[CameraToolbar alloc] initWithImageNames:@[@"rotate", @"road"]];
+    self.cameraToolbar.delegate = self;
+    UIColor *whiteBG = [UIColor colorWithWhite:1.0 alpha:.15];
+    self.topView.barTintColor = whiteBG;
+    self.bottomView.barTintColor = whiteBG;
+    self.topView.alpha = 0.5;
+    self.bottomView.alpha = 0.5;
 }
 
 @end
