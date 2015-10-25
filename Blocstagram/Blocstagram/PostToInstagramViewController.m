@@ -107,6 +107,10 @@
     [super viewWillLayoutSubviews];
     
     CGFloat edgeSize = MIN(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+    if (CGRectGetHeight(self.view.bounds) < edgeSize * 1.5) {
+        edgeSize /= 1.5;
+    }
+    
     
     self.previewImageView.frame = CGRectMake(0, self.topLayoutGuide.length, edgeSize, edgeSize);
     
@@ -350,48 +354,48 @@
     
     //Assignment 43
     //Sharpness filter
-    [self.photoFilterOperationQueue addOperationWithBlock:^{
-        CIFilter *sharpnessFilter = [CIFilter filterWithName:@"CISharpenLuminance"];
-        
-        if (sharpnessFilter) {
-            [sharpnessFilter setValue:sourceCIImage forKey:kCIInputImageKey];
-            [sharpnessFilter setValue:@0.4 forKey:kCIAttributeTypeScalar];
-            [self addCIImageToCollectionView:sharpnessFilter.outputImage withFilterTitle:NSLocalizedString(@"Sharpness", @"Sharpness Filter")];
-        }
-    }];
+//    [self.photoFilterOperationQueue addOperationWithBlock:^{
+//        CIFilter *sharpnessFilter = [CIFilter filterWithName:@"CISharpenLuminance"];
+//        
+//        if (sharpnessFilter) {
+//            [sharpnessFilter setValue:sourceCIImage forKey:kCIInputImageKey];
+//            [sharpnessFilter setValue:@0.4 forKey:kCIAttributeTypeScalar];
+//            [self addCIImageToCollectionView:sharpnessFilter.outputImage withFilterTitle:NSLocalizedString(@"Sharpness", @"Sharpness Filter")];
+//        }
+//    }];
     
-    [self.photoFilterOperationQueue addOperationWithBlock:^{
-        
-        CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone"];
-        [sepiaFilter setValue:@1 forKey:kCIInputIntensityKey];
-        [sepiaFilter setValue:sourceCIImage forKey:kCIInputImageKey];
-        
-
-        
-        CIFilter *bloomFilter = [CIFilter filterWithName:@"CIBloom"];
-        [bloomFilter setValue:@10 forKey:kCIAttributeTypeDistance];
-        [bloomFilter setValue:@1 forKey:kCIAttributeTypeScalar];
-        
-        CIFilter *composite = [CIFilter filterWithName:@"CIMultiplyCompositing"];
-        
-        if (sepiaFilter && bloomFilter) {
-            
-            CIImage *sepiaImage = sepiaFilter.outputImage;
-            
-            
-            CIImage *bloomImage = [bloomFilter.outputImage imageByApplyingOrientation:0];
-            
-            CIImage *sepiaPlusBloomImage = [CIFilter filterWithName:@"CISourceOverCompositing" keysAndValues:
-                                                  kCIInputImageKey, bloomImage,
-                                                  kCIInputBackgroundImageKey, sepiaImage,
-                                                  nil].outputImage;
-            
-            [composite setValue:sepiaPlusBloomImage forKey:kCIInputImageKey];
-            
-            [self addCIImageToCollectionView:composite.outputImage withFilterTitle:NSLocalizedString(@"BloomSephia", @"BloomSephia Filter")];
-        }
-        }];
-     
+//    [self.photoFilterOperationQueue addOperationWithBlock:^{
+//        
+//        CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone"];
+//        [sepiaFilter setValue:@1 forKey:kCIInputIntensityKey];
+//        [sepiaFilter setValue:sourceCIImage forKey:kCIInputImageKey];
+//        
+//
+//        
+//        CIFilter *bloomFilter = [CIFilter filterWithName:@"CIBloom"];
+//        [bloomFilter setValue:@10 forKey:kCIAttributeTypeDistance];
+//        [bloomFilter setValue:@1 forKey:kCIAttributeTypeScalar];
+//        
+//        CIFilter *composite = [CIFilter filterWithName:@"CIMultiplyCompositing"];
+//        
+//        if (sepiaFilter && bloomFilter) {
+//            
+//            CIImage *sepiaImage = sepiaFilter.outputImage;
+//            
+//            
+//            CIImage *bloomImage = [bloomFilter.outputImage imageByApplyingOrientation:0];
+//            
+//            CIImage *sepiaPlusBloomImage = [CIFilter filterWithName:@"CISourceOverCompositing" keysAndValues:
+//                                                  kCIInputImageKey, bloomImage,
+//                                                  kCIInputBackgroundImageKey, sepiaImage,
+//                                                  nil].outputImage;
+//            
+//            [composite setValue:sepiaPlusBloomImage forKey:kCIInputImageKey];
+//            
+//            [self addCIImageToCollectionView:composite.outputImage withFilterTitle:NSLocalizedString(@"BloomSephia", @"BloomSephia Filter")];
+//        }
+//        }];
+    
 
 }
 
