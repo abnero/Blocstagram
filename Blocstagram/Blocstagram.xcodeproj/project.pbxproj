@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B04A4231BDC5C47004BE5E4 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B04A4221BDC5C47004BE5E4 /* PostToInstagramViewController.m */; };
 		1B057B5B1BBE2A7100BB0774 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B5A1BBE2A7100BB0774 /* main.m */; };
 		1B057B5E1BBE2A7100BB0774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B5D1BBE2A7100BB0774 /* AppDelegate.m */; };
 		1B057B661BBE2A7100BB0774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B651BBE2A7100BB0774 /* Images.xcassets */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B04A4211BDC5C47004BE5E4 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
+		1B04A4221BDC5C47004BE5E4 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
 		1B057B551BBE2A7100BB0774 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B057B591BBE2A7100BB0774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B057B5A1BBE2A7100BB0774 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				1BFC3C951BD7597200771476 /* CropImageViewController.m */,
 				1BFC3C971BD9CED700771476 /* ImageLibraryViewController.h */,
 				1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */,
+				1B04A4211BDC5C47004BE5E4 /* PostToInstagramViewController.h */,
+				1B04A4221BDC5C47004BE5E4 /* PostToInstagramViewController.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				1B057B5E1BBE2A7100BB0774 /* AppDelegate.m in Sources */,
 				1BF780C91BD563CE00B08D5E /* CameraViewController.m in Sources */,
 				1B6ECF371BCE1B73003CFE67 /* MediaFullScreenViewController.m in Sources */,
+				1B04A4231BDC5C47004BE5E4 /* PostToInstagramViewController.m in Sources */,
 				1BF780CC1BD56CF500B08D5E /* UIImage+ImageUtilities.m in Sources */,
 				1B057BA11BC0DF8100BB0774 /* DataSource.m in Sources */,
 				1B057B5B1BBE2A7100BB0774 /* main.m in Sources */,
