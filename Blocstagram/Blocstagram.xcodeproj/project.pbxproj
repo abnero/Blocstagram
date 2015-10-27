@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B04A4231BDC5C47004BE5E4 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B04A4221BDC5C47004BE5E4 /* PostToInstagramViewController.m */; };
+		1B057B5B1BBE2A7100BB0774 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B5A1BBE2A7100BB0774 /* main.m */; };
+		1B057B5E1BBE2A7100BB0774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B5D1BBE2A7100BB0774 /* AppDelegate.m */; };
+		1B057B661BBE2A7100BB0774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B651BBE2A7100BB0774 /* Images.xcassets */; };
+		1B057B691BBE2A7100BB0774 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B671BBE2A7100BB0774 /* LaunchScreen.xib */; };
+		1B057B751BBE2A7100BB0774 /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B741BBE2A7100BB0774 /* BlocstagramTests.m */; };
+		1B057B891BBE3BE200BB0774 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B7F1BBE3BE200BB0774 /* 1.jpg */; };
+		1B057B8A1BBE3BE200BB0774 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B801BBE3BE200BB0774 /* 2.jpg */; };
+		1B057B8B1BBE3BE200BB0774 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B811BBE3BE200BB0774 /* 3.jpg */; };
+		1B057B8C1BBE3BE200BB0774 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B821BBE3BE200BB0774 /* 4.jpg */; };
+		1B057B8D1BBE3BE200BB0774 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B831BBE3BE200BB0774 /* 5.jpg */; };
+		1B057B8E1BBE3BE200BB0774 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B841BBE3BE200BB0774 /* 6.jpg */; };
+		1B057B8F1BBE3BE200BB0774 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B851BBE3BE200BB0774 /* 7.jpg */; };
+		1B057B901BBE3BE200BB0774 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B861BBE3BE200BB0774 /* 8.jpg */; };
+		1B057B911BBE3BE200BB0774 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B871BBE3BE200BB0774 /* 9.jpg */; };
+		1B057B921BBE3BE200BB0774 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B057B881BBE3BE200BB0774 /* 10.jpg */; };
+		1B057B951BBE3C7400BB0774 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B941BBE3C7400BB0774 /* ImagesTableViewController.m */; };
+		1B057B981BC0DD7F00BB0774 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B971BC0DD7F00BB0774 /* User.m */; };
+		1B057B9B1BC0DE2700BB0774 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B9A1BC0DE2700BB0774 /* Media.m */; };
+		1B057B9E1BC0DEBA00BB0774 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057B9D1BC0DEBA00BB0774 /* Comment.m */; };
+		1B057BA11BC0DF8100BB0774 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B057BA01BC0DF8100BB0774 /* DataSource.m */; };
+		1B6ECF371BCE1B73003CFE67 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6ECF361BCE1B73003CFE67 /* MediaFullScreenViewController.m */; };
+		1BF3253F1BC8AA130005C421 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3253E1BC8AA130005C421 /* LoginViewController.m */; };
+		1BF7647E1BD3596E00157876 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7647D1BD3596E00157876 /* CircleSpinnerView.m */; };
+		1BF764811BD35E6600157876 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF764801BD35E6600157876 /* LikeButton.m */; };
+		1BF764841BD4624C00157876 /* CountingLikes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF764831BD4624C00157876 /* CountingLikes.m */; };
+		1BF780C01BD4716000B08D5E /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780BF1BD4716000B08D5E /* MediaTableViewCell.m */; };
+		1BF780C31BD4755B00B08D5E /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780C21BD4755B00B08D5E /* ComposeCommentView.m */; };
+		1BF780C61BD4C33E00B08D5E /* CameraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780C51BD4C33E00B08D5E /* CameraToolbar.m */; };
+		1BF780C91BD563CE00B08D5E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780C81BD563CE00B08D5E /* CameraViewController.m */; };
+		1BF780CC1BD56CF500B08D5E /* UIImage+ImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */; };
+		1BFC3C931BD7555300771476 /* CropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC3C921BD7555300771476 /* CropBox.m */; };
+		1BFC3C961BD7597200771476 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC3C951BD7597200771476 /* CropImageViewController.m */; };
+		1BFC3C991BD9CED700771476 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */; };
+		710BA17F85C6CF6ACC3C8553 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E958B7ACE92AC59D84E9D5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B057B6F1BBE2A7100BB0774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B057B4D1BBE2A7000BB0774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B057B541BBE2A7000BB0774;
+			remoteInfo = Blocstagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B04A4211BDC5C47004BE5E4 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
+		1B04A4221BDC5C47004BE5E4 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
+		1B057B551BBE2A7100BB0774 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B057B591BBE2A7100BB0774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B057B5A1BBE2A7100BB0774 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B057B5C1BBE2A7100BB0774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B057B5D1BBE2A7100BB0774 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B057B651BBE2A7100BB0774 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B057B681BBE2A7100BB0774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B057B6E1BBE2A7100BB0774 /* BlocstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B057B731BBE2A7100BB0774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B057B741BBE2A7100BB0774 /* BlocstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramTests.m; sourceTree = "<group>"; };
+		1B057B7F1BBE3BE200BB0774 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		1B057B801BBE3BE200BB0774 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		1B057B811BBE3BE200BB0774 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		1B057B821BBE3BE200BB0774 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		1B057B831BBE3BE200BB0774 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		1B057B841BBE3BE200BB0774 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		1B057B851BBE3BE200BB0774 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		1B057B861BBE3BE200BB0774 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		1B057B871BBE3BE200BB0774 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		1B057B881BBE3BE200BB0774 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		1B057B931BBE3C7400BB0774 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesTableViewController.h; sourceTree = "<group>"; };
+		1B057B941BBE3C7400BB0774 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesTableViewController.m; sourceTree = "<group>"; };
+		1B057B961BC0DD7F00BB0774 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1B057B971BC0DD7F00BB0774 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1B057B991BC0DE2700BB0774 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		1B057B9A1BC0DE2700BB0774 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		1B057B9C1BC0DEBA00BB0774 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		1B057B9D1BC0DEBA00BB0774 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		1B057B9F1BC0DF8100BB0774 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		1B057BA01BC0DF8100BB0774 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		1B057BA51BC1E7F300BB0774 /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
+		1B6ECF351BCE1B73003CFE67 /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		1B6ECF361BCE1B73003CFE67 /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
+		1BF3253D1BC8AA130005C421 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1BF3253E1BC8AA130005C421 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1BF7647C1BD3596E00157876 /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
+		1BF7647D1BD3596E00157876 /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
+		1BF7647F1BD35E6600157876 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		1BF764801BD35E6600157876 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
+		1BF764821BD4624C00157876 /* CountingLikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountingLikes.h; sourceTree = "<group>"; };
+		1BF764831BD4624C00157876 /* CountingLikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountingLikes.m; sourceTree = "<group>"; };
+		1BF780BF1BD4716000B08D5E /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
+		1BF780C11BD4755B00B08D5E /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		1BF780C21BD4755B00B08D5E /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
+		1BF780C41BD4C33E00B08D5E /* CameraToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToolbar.h; sourceTree = "<group>"; };
+		1BF780C51BD4C33E00B08D5E /* CameraToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToolbar.m; sourceTree = "<group>"; };
+		1BF780C71BD563CE00B08D5E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		1BF780C81BD563CE00B08D5E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		1BF780CA1BD56CF500B08D5E /* UIImage+ImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageUtilities.h"; sourceTree = "<group>"; };
+		1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageUtilities.m"; sourceTree = "<group>"; };
+		1BFC3C911BD7555300771476 /* CropBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropBox.h; sourceTree = "<group>"; };
+		1BFC3C921BD7555300771476 /* CropBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropBox.m; sourceTree = "<group>"; };
+		1BFC3C941BD7597200771476 /* CropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageViewController.h; sourceTree = "<group>"; };
+		1BFC3C951BD7597200771476 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
+		1BFC3C971BD9CED700771476 /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
+		1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
+		24E958B7ACE92AC59D84E9D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		360072F83DB013B57E460556 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6612B88F859094D32E92BADB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B057B521BBE2A7000BB0774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710BA17F85C6CF6ACC3C8553 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B057B6B1BBE2A7100BB0774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180F611DD7A1621C93E5C46D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				360072F83DB013B57E460556 /* Pods.debug.xcconfig */,
+				6612B88F859094D32E92BADB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1B057B4C1BBE2A7000BB0774 = {
+			isa = PBXGroup;
+			children = (
+				1B057B571BBE2A7100BB0774 /* Blocstagram */,
+				1B057B711BBE2A7100BB0774 /* BlocstagramTests */,
+				1B057B561BBE2A7100BB0774 /* Products */,
+				180F611DD7A1621C93E5C46D /* Pods */,
+				6FDEC83ECE828FB59355B4A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B057B561BBE2A7100BB0774 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B057B551BBE2A7100BB0774 /* Blocstagram.app */,
+				1B057B6E1BBE2A7100BB0774 /* BlocstagramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B057B571BBE2A7100BB0774 /* Blocstagram */ = {
+			isa = PBXGroup;
+			children = (
+				1B057B7E1BBE3B5C00BB0774 /* Images */,
+				1B057B5C1BBE2A7100BB0774 /* AppDelegate.h */,
+				1B057B5D1BBE2A7100BB0774 /* AppDelegate.m */,
+				1B057B651BBE2A7100BB0774 /* Images.xcassets */,
+				1B057B671BBE2A7100BB0774 /* LaunchScreen.xib */,
+				1B057B581BBE2A7100BB0774 /* Supporting Files */,
+				1B057B931BBE3C7400BB0774 /* ImagesTableViewController.h */,
+				1B057B941BBE3C7400BB0774 /* ImagesTableViewController.m */,
+				1B057B961BC0DD7F00BB0774 /* User.h */,
+				1B057B971BC0DD7F00BB0774 /* User.m */,
+				1B057B991BC0DE2700BB0774 /* Media.h */,
+				1B057B9A1BC0DE2700BB0774 /* Media.m */,
+				1B057B9C1BC0DEBA00BB0774 /* Comment.h */,
+				1B057B9D1BC0DEBA00BB0774 /* Comment.m */,
+				1B057B9F1BC0DF8100BB0774 /* DataSource.h */,
+				1B057BA01BC0DF8100BB0774 /* DataSource.m */,
+				1B057BA51BC1E7F300BB0774 /* MediaTableViewCell.h */,
+				1BF780BF1BD4716000B08D5E /* MediaTableViewCell.m */,
+				1BF3253D1BC8AA130005C421 /* LoginViewController.h */,
+				1BF3253E1BC8AA130005C421 /* LoginViewController.m */,
+				1B6ECF351BCE1B73003CFE67 /* MediaFullScreenViewController.h */,
+				1B6ECF361BCE1B73003CFE67 /* MediaFullScreenViewController.m */,
+				1BF7647C1BD3596E00157876 /* CircleSpinnerView.h */,
+				1BF7647D1BD3596E00157876 /* CircleSpinnerView.m */,
+				1BF7647F1BD35E6600157876 /* LikeButton.h */,
+				1BF764801BD35E6600157876 /* LikeButton.m */,
+				1BF764821BD4624C00157876 /* CountingLikes.h */,
+				1BF764831BD4624C00157876 /* CountingLikes.m */,
+				1BF780C11BD4755B00B08D5E /* ComposeCommentView.h */,
+				1BF780C21BD4755B00B08D5E /* ComposeCommentView.m */,
+				1BF780C41BD4C33E00B08D5E /* CameraToolbar.h */,
+				1BF780C51BD4C33E00B08D5E /* CameraToolbar.m */,
+				1BF780C71BD563CE00B08D5E /* CameraViewController.h */,
+				1BF780C81BD563CE00B08D5E /* CameraViewController.m */,
+				1BF780CA1BD56CF500B08D5E /* UIImage+ImageUtilities.h */,
+				1BF780CB1BD56CF500B08D5E /* UIImage+ImageUtilities.m */,
+				1BFC3C911BD7555300771476 /* CropBox.h */,
+				1BFC3C921BD7555300771476 /* CropBox.m */,
+				1BFC3C941BD7597200771476 /* CropImageViewController.h */,
+				1BFC3C951BD7597200771476 /* CropImageViewController.m */,
+				1BFC3C971BD9CED700771476 /* ImageLibraryViewController.h */,
+				1BFC3C981BD9CED700771476 /* ImageLibraryViewController.m */,
+				1B04A4211BDC5C47004BE5E4 /* PostToInstagramViewController.h */,
+				1B04A4221BDC5C47004BE5E4 /* PostToInstagramViewController.m */,
+			);
+			path = Blocstagram;
+			sourceTree = "<group>";
+		};
+		1B057B581BBE2A7100BB0774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B057B591BBE2A7100BB0774 /* Info.plist */,
+				1B057B5A1BBE2A7100BB0774 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B057B711BBE2A7100BB0774 /* BlocstagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B057B741BBE2A7100BB0774 /* BlocstagramTests.m */,
+				1B057B721BBE2A7100BB0774 /* Supporting Files */,
+			);
+			path = BlocstagramTests;
+			sourceTree = "<group>";
+		};
+		1B057B721BBE2A7100BB0774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B057B731BBE2A7100BB0774 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B057B7E1BBE3B5C00BB0774 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1B057B7F1BBE3BE200BB0774 /* 1.jpg */,
+				1B057B801BBE3BE200BB0774 /* 2.jpg */,
+				1B057B811BBE3BE200BB0774 /* 3.jpg */,
+				1B057B821BBE3BE200BB0774 /* 4.jpg */,
+				1B057B831BBE3BE200BB0774 /* 5.jpg */,
+				1B057B841BBE3BE200BB0774 /* 6.jpg */,
+				1B057B851BBE3BE200BB0774 /* 7.jpg */,
+				1B057B861BBE3BE200BB0774 /* 8.jpg */,
+				1B057B871BBE3BE200BB0774 /* 9.jpg */,
+				1B057B881BBE3BE200BB0774 /* 10.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		6FDEC83ECE828FB59355B4A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E958B7ACE92AC59D84E9D5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B057B541BBE2A7000BB0774 /* Blocstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B057B781BBE2A7100BB0774 /* Build configuration list for PBXNativeTarget "Blocstagram" */;
+			buildPhases = (
+				70BCEF100AB048E9A46F4460 /* Check Pods Manifest.lock */,
+				1B057B511BBE2A7000BB0774 /* Sources */,
+				1B057B521BBE2A7000BB0774 /* Frameworks */,
+				1B057B531BBE2A7000BB0774 /* Resources */,
+				33071BE5A3E357AA94B2F280 /* Embed Pods Frameworks */,
+				F6DD1FAAD565C691372250EE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blocstagram;
+			productName = Blocstagram;
+			productReference = 1B057B551BBE2A7100BB0774 /* Blocstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B057B6D1BBE2A7100BB0774 /* BlocstagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B057B7B1BBE2A7100BB0774 /* Build configuration list for PBXNativeTarget "BlocstagramTests" */;
+			buildPhases = (
+				1B057B6A1BBE2A7100BB0774 /* Sources */,
+				1B057B6B1BBE2A7100BB0774 /* Frameworks */,
+				1B057B6C1BBE2A7100BB0774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B057B701BBE2A7100BB0774 /* PBXTargetDependency */,
+			);
+			name = BlocstagramTests;
+			productName = BlocstagramTests;
+			productReference = 1B057B6E1BBE2A7100BB0774 /* BlocstagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B057B4D1BBE2A7000BB0774 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Abner Flores";
+				TargetAttributes = {
+					1B057B541BBE2A7000BB0774 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					1B057B6D1BBE2A7100BB0774 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 1B057B541BBE2A7000BB0774;
+					};
+				};
+			};
+			buildConfigurationList = 1B057B501BBE2A7000BB0774 /* Build configuration list for PBXProject "Blocstagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B057B4C1BBE2A7000BB0774;
+			productRefGroup = 1B057B561BBE2A7100BB0774 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B057B541BBE2A7000BB0774 /* Blocstagram */,
+				1B057B6D1BBE2A7100BB0774 /* BlocstagramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B057B531BBE2A7000BB0774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B057B911BBE3BE200BB0774 /* 9.jpg in Resources */,
+				1B057B901BBE3BE200BB0774 /* 8.jpg in Resources */,
+				1B057B8C1BBE3BE200BB0774 /* 4.jpg in Resources */,
+				1B057B8B1BBE3BE200BB0774 /* 3.jpg in Resources */,
+				1B057B8E1BBE3BE200BB0774 /* 6.jpg in Resources */,
+				1B057B891BBE3BE200BB0774 /* 1.jpg in Resources */,
+				1B057B691BBE2A7100BB0774 /* LaunchScreen.xib in Resources */,
+				1B057B8D1BBE3BE200BB0774 /* 5.jpg in Resources */,
+				1B057B8F1BBE3BE200BB0774 /* 7.jpg in Resources */,
+				1B057B8A1BBE3BE200BB0774 /* 2.jpg in Resources */,
+				1B057B921BBE3BE200BB0774 /* 10.jpg in Resources */,
+				1B057B661BBE2A7100BB0774 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B057B6C1BBE2A7100BB0774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33071BE5A3E357AA94B2F280 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70BCEF100AB048E9A46F4460 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DD1FAAD565C691372250EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B057B511BBE2A7000BB0774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B057B981BC0DD7F00BB0774 /* User.m in Sources */,
+				1BFC3C961BD7597200771476 /* CropImageViewController.m in Sources */,
+				1B057B9E1BC0DEBA00BB0774 /* Comment.m in Sources */,
+				1B057B9B1BC0DE2700BB0774 /* Media.m in Sources */,
+				1BF780C31BD4755B00B08D5E /* ComposeCommentView.m in Sources */,
+				1BF3253F1BC8AA130005C421 /* LoginViewController.m in Sources */,
+				1BF780C01BD4716000B08D5E /* MediaTableViewCell.m in Sources */,
+				1BF780C61BD4C33E00B08D5E /* CameraToolbar.m in Sources */,
+				1BFC3C991BD9CED700771476 /* ImageLibraryViewController.m in Sources */,
+				1BFC3C931BD7555300771476 /* CropBox.m in Sources */,
+				1BF764841BD4624C00157876 /* CountingLikes.m in Sources */,
+				1B057B5E1BBE2A7100BB0774 /* AppDelegate.m in Sources */,
+				1BF780C91BD563CE00B08D5E /* CameraViewController.m in Sources */,
+				1B6ECF371BCE1B73003CFE67 /* MediaFullScreenViewController.m in Sources */,
+				1B04A4231BDC5C47004BE5E4 /* PostToInstagramViewController.m in Sources */,
+				1BF780CC1BD56CF500B08D5E /* UIImage+ImageUtilities.m in Sources */,
+				1B057BA11BC0DF8100BB0774 /* DataSource.m in Sources */,
+				1B057B5B1BBE2A7100BB0774 /* main.m in Sources */,
+				1BF764811BD35E6600157876 /* LikeButton.m in Sources */,
+				1BF7647E1BD3596E00157876 /* CircleSpinnerView.m in Sources */,
+				1B057B951BBE3C7400BB0774 /* ImagesTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B057B6A1BBE2A7100BB0774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B057B751BBE2A7100BB0774 /* BlocstagramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B057B701BBE2A7100BB0774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B057B541BBE2A7000BB0774 /* Blocstagram */;
+			targetProxy = 1B057B6F1BBE2A7100BB0774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B057B671BBE2A7100BB0774 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B057B681BBE2A7100BB0774 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B057B761BBE2A7100BB0774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B057B771BBE2A7100BB0774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B057B791BBE2A7100BB0774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360072F83DB013B57E460556 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blocstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B057B7A1BBE2A7100BB0774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6612B88F859094D32E92BADB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blocstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B057B7C1BBE2A7100BB0774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlocstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blocstagram.app/Blocstagram";
+			};
+			name = Debug;
+		};
+		1B057B7D1BBE2A7100BB0774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlocstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blocstagram.app/Blocstagram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B057B501BBE2A7000BB0774 /* Build configuration list for PBXProject "Blocstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B057B761BBE2A7100BB0774 /* Debug */,
+				1B057B771BBE2A7100BB0774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B057B781BBE2A7100BB0774 /* Build configuration list for PBXNativeTarget "Blocstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B057B791BBE2A7100BB0774 /* Debug */,
+				1B057B7A1BBE2A7100BB0774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B057B7B1BBE2A7100BB0774 /* Build configuration list for PBXNativeTarget "BlocstagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B057B7C1BBE2A7100BB0774 /* Debug */,
+				1B057B7D1BBE2A7100BB0774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B057B4D1BBE2A7000BB0774 /* Project object */;
+}
